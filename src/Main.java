@@ -37,7 +37,7 @@ public class Main {
                 KeyStoreException,
                 KeyManagementException {
 
-            boolean result = false;
+        boolean result = false;
         String url = MyClassConstants.BASE_URI + "/" + MyClassConstants.VERSION;
 
         int responseCode = myClass.getSSLConnector().getConnection(new URL(url)).getResponseCode();
@@ -56,6 +56,7 @@ public class Main {
                     NoSuchAlgorithmException,
                     KeyStoreException,
                     KeyManagementException {
+       
         boolean result = false;
         String url = MyClassConstants.BASE_URI + "/" + MyClassConstants.VERSION;
         int responseCode = myClass.getSSLConnector()
